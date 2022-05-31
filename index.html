@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
     <title>Meu Projeto HTML</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
     <br>
 </div>
     
-    <form action="">
+    <form>
         <fieldset class="grupo"> 
             <div class="campo">
                 <Label for="nome"><strong>Nome</strong></Label>
@@ -31,11 +32,11 @@
         </div>
 
         <div class="campo">
-            <label for="pergunta1">De qual lado da aplicação você desenvolve?</label>
-            <label for="radiobox1">
+            <label for="pergunta1"><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label for="radio">
                 <input type="radio" name="devweb" value="frontend" checked>Front-End
             </label>
-            <label for="radiobox2">
+            <label for="radio">
                 <input type="radio" name="devweb" value="backend">Back-End
             </label>
             <label for="radiobox3">
@@ -52,8 +53,8 @@
            </select>           
         </div>
         <fieldset class="grupo">
-            <div>
-                <label for="pergunta2">Selecione as tecnologias que você utiliza</label><br><br>
+            <div id="check">
+                <label> <strong> Selecione as tecnologias que você utiliza? </strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
                 <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
@@ -69,11 +70,11 @@
                 <input type="checkbox" id="tecnologia7" name="tecnologia7" value="JAVA">
                 <label for="tenologia7">JAVA</label>  
             </div>
-        </fieldset>
+        </fieldset><br>
         <div class="campo">
-            <label for="pergunta3">Conte um pouco da sua experiencia</label>
+            <label><strong> Conte um pouco da sua experiência:</strong></label>
             <textarea name="experiencia" id="experiencia" style="width: 26em" row="10"></textarea>
-            <button type="submit">Concluído</button>
+            <button class="botao" type="submit">Concluído</button>
         </div>
 
     </form>
